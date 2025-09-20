@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOWNLOADS - Space Taft</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <header class="main-header">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">
+                     <img src="images/pacific%20avelex.png" alt="Pacific Avelex Logo" width="105" height="63" class="logo-img"/>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="{% if page.url == '/' %}active{% endif %}">HOME</a></li>
+                    <li><a href="space-taft.html" class="{% if page.url contains 'space-taft' %}active{% endif %}">SPACE TAFT</a></li>
+                    <li><a href="updates.html" class="{% if page.url contains 'updates' %}active{% endif %}">UPDATES</a></li>
+                    <li><a href="downloads.html" class="active">DOWNLOADS</a></li>
+                    <li><a href="contact.html" class="{% if page.url contains 'contact' %}active{% endif %}">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="header-blue-line"></div>
+        </header>
+
+    <main>
+        <section class="page-header themed-section">
+            <div class="section-container">
+                <h1 class="gradient-text">Downloads</h1>
+                <p class="section-intro">Find and download essential documents about Space Taft here.</p>
+            </div>
+        </section>
+
+        <section class="downloads-grid-section">
+            <div class="section-container">
+                <div class="downloads-grid">
+
+                    <a href="assets/space-taft-flyer.pdf" class="download-item">
+                        <img src="images/space-taft-flyer.jpg" alt="Space Taft Flyer Thumbnail" />
+                        <div class="download-content">
+                            <h3>Space Taft Flyer</h3>
+                            <p class="download-description">Redefining Dormitory Living</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="download-item">
+                        <div class="download-placeholder">
+                            <span>📄</span>
+                        </div>
+                        <div class="download-content">
+                            <h3>Application Form</h3>
+                            <p class="download-description">Download and fill out the form to apply for a unit.</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="download-item">
+                        <div class="download-placeholder">
+                            <span>📄</span>
+                        </div>
+                        <div class="download-content">
+                            <h3>Sample Lease Agreement</h3>
+                            <p class="download-description">Review the terms and conditions of our lease agreement.</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h4>Contact Details</h4>
+                <p><strong>Phone:</strong> +63 2 521 5717</p>
+                <p><strong>Address:</strong> 1952 Taft Avenue, Malate, Manila, Philippines</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">©2025 Pacific Avelex. All rights reserved.</p>
+            <p class="footer-credit">Developed by Antonio III Buenafe
+                                <br><br> ADVISORY: This is only a speculative redesign created for educational and portfolio purposes. It is not affiliated with or endorsed by Pacific Avelex.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

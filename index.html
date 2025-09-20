@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME - Space Taft</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo">
+                <img src="images/pacific%20avelex.png" alt="Pacific Avelex Logo" width="105" height="63" class="logo-img"/>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="space-taft.html" class="{% if page.url contains 'space-taft' %}active{% endif %}">SPACE TAFT</a></li>
+                <li><a href="updates.html" class="{% if page.url contains 'updates' %}active{% endif %}">UPDATES</a></li>
+                <li><a href="downloads.html" class="{% if page.url contains 'downloads' %}active{% endif %}">DOWNLOADS</a></li>
+                <li><a href="contact.html" class="{% if page.url contains 'contact' %}active{% endif %}">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header-blue-line"></div>
+    </header>
+
+    <main>
+        <section class="hero-slideshow">
+            <div class="slideshow-overlay"></div>
+            <div class="slideshow-container">
+                <img class="slide" src="images/01.jpg" alt="Dormitory slide 1" />
+                <img class="slide" src="images/02.jpg" alt="Dormitory slide 2" />
+                <img class="slide" src="images/03.jpg" alt="Dormitory slide 3" />
+                <img class="slide" src="images/04.jpg" alt="Dormitory slide 4" />
+            </div>
+        </section>
+
+        <section class="dorm-identity">
+            <h1 class="gradient-text">Redefining Dormitory Living</h1>
+        </section>
+
+        <section class="property-info">
+            <div class="property-content">
+                <div class="property-image">
+                    <img src="images/space-taft.jpg" alt="Image of Space Taft building" />
+                </div>
+                <div class="property-description">
+                    <p>Space Taft is a 28-storey condormitel (combination of condominium & dormitory units that will be operated as hotel) strategically located along Taft Avenue.</p>
+                </div>
+            </div>
+            <div class="additional-info">
+                <p>Space Taft offers an upgrade to the typical bedspace experience of students, health workers and young urban professionals.</p>
+                <a href="space-taft.html" class="cta-button">Read more</a>
+            </div>
+        </section>
+
+        <section id="amenities" class="themed-section">
+            <div class="section-container">
+                <h2 class="section-title">Amenities</h2>
+                <p class="section-intro">Explore the modern facilities and shared spaces that support your lifestyle.</p>
+                <div class="amenities-grid">
+                    <div class="amenity-item"><span>📚</span><h3>Study Lounge</h3></div>
+                    <div class="amenity-item"><span>🏋️</span><h3>Active Gym</h3></div>
+                    <div class="amenity-item"><span>🏊</span><h3>Swimming Pool</h3></div>
+                    <div class="amenity-item"><span>🔒</span><h3>24/7 Security</h3></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="location-section">
+            <div class="section-container">
+                <div class="location-text">
+                    <h2 class="section-title">Our Location</h2>
+                    <p class="section-intro">Conveniently located in Manila's University Belt, close to major establishments.</p>
+                    <ul class="location-list">
+                        <li><strong>Universities:</strong> De La Salle University, UP Manila, University of Santo Tomas, Adamson University</li>
+                        <li><strong>Transport:</strong> LRT-1 (Vito Cruz Station)</li>
+                        <li><strong>Hospitals:</strong> Philippine General Hospital, Manila Doctors Hospital</li>
+                    </ul>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.3276662703816!2d120.99343947476839!3d14.577549776999251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c99e909565f1%3A0xc3f17387a6df1f52!2s1952%20Taft%20Ave%2C%20Malate%2C%20Manila%2C%201004%20Metro%20Manila%2C%20Philippines!5e0!3m2!1sen!2sus!4v1726857185012!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="section-container">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p>"Living at Space Taft has been a game-changer. The amenities are top-notch and the location is incredibly convenient for my studies."</p>
+                        <h4>- Maria L., Student</h4>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"The security and management are excellent. It gives me peace of mind knowing my daughter is in a safe and supportive environment."</p>
+                        <h4>- Mr. Reyes, Parent</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="blue-cta-section">
+            <div class="section-container">
+                <h2 class="section-title">Ready to Redefine Your Living Experience?</h2>
+                <p class="section-intro">Inquire about our rates and availability today.</p>
+                <a href="contact.html" class="cta-button">Contact Us</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <h4>Contact Details</h4>
+                <p><strong>Phone:</strong> +63 2 521 5717</p>
+                <p><strong>Address:</strong> 1952 Taft Avenue, Malate, Manila, Philippines</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copyright">©2025 Pacific Avelex. All rights reserved.</p>
+            <p class="footer-credit">Developed by Antonio III Buenafe
+                <br><br> ADVISORY: This is only a speculative redesign created for educational and portfolio purposes. It is not affiliated with or endorsed by Pacific Avelex.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
